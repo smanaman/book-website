@@ -2,102 +2,181 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 .firstborder {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100vh;
-    background-image: url(http://youvaworld.com/wp-content/themes/Youva/images/banner.png);
+    /* background-image: url(http://youvaworld.com/wp-content/themes/Youva/images/banner.png); */
     background-size: cover;
+
 }
 
 .nav {
     height: 120px;
-    border: 2px solid black;
 }
-
-.slider-con {
-    position: relative;
-    width: 100%;
-    height: 611px;
-    overflow: hidden;
-    /* border-radius: 10px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* background: #fff; */
+.navborder{
     border: 1px solid black;
-    ;
 }
-
-.slider {
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-   
-    font-size: 1.5em;
-   height: 100%;
-    box-sizing: border-box;
-    display: flex;
-}
-
-
-
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.slider-btn:hover {
-    background-color: #333;
-}
-.slider-text{
-    width: 60%;
-    height: 100%;
-    border: 1px solid black;
-    font-size: 45px;
-    line-height: 70px;
-    margin-bottom: 5px;
-    letter-spacing: 3.1px;
-    font-weight: bolder;
+.navborder-text{
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid black; */
+    font-size: 22px;
+    /* font-weight: 500; */
+    color: rgb(19, 13, 13);
+    white-space: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    width: 320px;
+    height: 80px;
+    /* border: 1px solid black; */
+   color: rgb(25, 23, 23);
+}
+
+#navtext{
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* slider */
+.slider{
+    width: 100wh;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.slider::-webkit-scrollbar{
+    display: none;
 }
 .slider-img{
-    width: 40%;
-    height: 100%;
+    min-width:100%;
     border: 1px solid black;
-  
+    height: 100%;
 }
-.slider-img img{
-  margin-top: 20px;
+#left-btn{
+    width: 40px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.528);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#right-btn{
+    width: 40px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.528);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-@media (max-width: 600px) {
-    .slide {
-        font-size: 1.2em;
-    }
+/* about a website */
 
-    .slider-btn {
-        padding: 8px;
-    }
+.about {
+    height: 400px;
+}
+
+.AboutText {
+    font-family: "Kanit", sans-serif;
+    font-size: 39px;
+    /* font-weight: 800; */
+}
+
+.About-Pera {
+    color: #686868;
+    font-family: 'roboto', sans-serif;
+}
+
+.About-btn {
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+}
+
+.About-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* booksection part */
+.book-section {
+    height: 420px;
+}
+
+.book-section-text {
+    width: 600px;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.round-book {
+    width: 100%;
+    height: 350px;
+    /* border: 10px solid black; */
+    border-radius: 20px;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.book-section-text-heading {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: end;
+    font-size: 1.9rem;
+}
+
+.book-section-text-p {
+    margin-top: 20px;
+    color: #686868;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.book-section-text-button {
+    width: 170px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    background: none;
+}
+
+.book-section-text-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.round-book_2 {
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    /* display: flex; */
+    overflow: hidden;
+}
+.booksection-main{
+    height: auto;
 }
