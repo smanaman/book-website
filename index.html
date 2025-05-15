@@ -25,84 +25,87 @@
     <div class="container-fluid firstborder   m-0 p-0">
         <!-- Navbar -->
 
-       <div class="container nav d-flex justify-content-between align-items-center">
-    <!-- Logo Section -->
-    <div class="col-3 navborder d-flex align-items-center">
-        <div class="logo d-flex justify-content-center">
-            <h1>smart write</h1>
-        </div>
-    </div>
-    
-    <!-- Desktop Navigation -->
-    <div class="col-9 navborder d-none d-lg-block">
-        <div class="row navborder m-0 p-0">
-            <div class="col-2 navborder-text">
-                <p id="navtext">about</p>
+        <div class="container nav d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div class="col-3 navborder d-flex align-items-center">
+                <div class="logo d-flex justify-content-center">
+                    <h1>smart write</h1>
+                </div>
             </div>
-            <div class="col-2 navborder-text">
-                <p id="navtext">our products</p>
+
+            <!-- Desktop Navigation -->
+            <div class="col-9 navborder d-none d-lg-block">
+                <div class="row navborder m-0 p-0">
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">about</p>
+                    </div>
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">our products</p>
+                    </div>
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">media</p>
+                    </div>
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">gallery</p>
+                    </div>
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">contact</p>
+                    </div>
+                    <div class="col-2 navborder-text">
+                        <p id="navtext">buy now</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-2 navborder-text">
-                <p id="navtext">media</p>
+
+            <!-- Mobile Hamburger -->
+            <div class="d-lg-none">
+                <button class="hamburger-btn" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="col-2 navborder-text">
-                <p id="navtext">gallery</p>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="mobile-menu d-lg-none" id="mobileMenu">
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">about</p>
+                </div>
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">our products</p>
+                </div>
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">media</p>
+                </div>
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">gallery</p>
+                </div>
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">contact</p>
+                </div>
+                <div class="mobile-nav-item">
+                    <p class="navtext-mobile">buy now</p>
+                </div>
             </div>
-            <div class="col-2 navborder-text">
-                <p id="navtext">contact</p>
-            </div>
-            <div class="col-2 navborder-text">
-                <p id="navtext">buy now</p>
-            </div>
         </div>
-    </div>
-    
-    <!-- Mobile Hamburger -->
-    <div class="d-lg-none">
-        <button class="hamburger-btn" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-    
-    <!-- Mobile Menu (hidden by default) -->
-    <div class="mobile-menu d-lg-none" id="mobileMenu">
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">about</p>
-        </div>
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">our products</p>
-        </div>
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">media</p>
-        </div>
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">gallery</p>
-        </div>
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">contact</p>
-        </div>
-        <div class="mobile-nav-item">
-            <p class="navtext-mobile">buy now</p>
-        </div>
-    </div>
-</div>
 
 
         <!-- slider div -->
 
 
-        <div class=" mt-2 row  m-0 t-0">
-            <div class="col-12 slider m-0 p-0">
-                <div class="slider-img"><img src="./assert/img/poster-book.jpg" alt="" width="100%" height="100%"></div>
-                <div class="slider-img">2</div>
-                <div class="slider-img">3</div>
-            </div>
-        </div>
-        <button id="left-btn"><i class="fa-solid fa-angle-left"></i></button>
-        <button id="right-btn"><i class="fa-solid fa-angle-right"></i></button>
+        <div class="slider-container mt-3">
+    <div class="slider">
+        <div class="slider-img"><img src="./assert/img/poster-book.jpg" alt="" width="100%" height="100%"></div>
+        <div class="slider-img">2</div>
+        <div class="slider-img">3</div>
     </div>
+    <button id="left-btn"><i class="fa-solid fa-angle-left"></i></button>
+    <button id="right-btn"><i class="fa-solid fa-angle-right"></i></button>
+</div>
+    </div>
+
+
+
     <div class="container mt-5">
 
         <div class="row border ">
@@ -128,73 +131,73 @@
     </div>
     <!-- row one book -->
 
- <div class="container mt-5">
-    <!-- First Row -->
-    <div class="row d-flex justify-content-evenly flex-column-reverse flex-md-row overflow-hidden gsap-row-1">
-        <div id="rightslide" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
-            <div class="book-section-text">
-                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
-                <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
-                    of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
-                    about how to fill the pages of our favorite notebook.</p>
-                <div class="book-section-text-button-div"> 
-                    <button class="book-section-text-button">VIEW PRODUCTS</button>
+    <div class="container mt-5">
+        <!-- First Row -->
+        <div class="row d-flex justify-content-evenly flex-column-reverse flex-md-row overflow-hidden gsap-row-1">
+            <div id="rightslide" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+                <div class="book-section-text">
+                    <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                    <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
+                        of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to
+                        be more imaginative<br class="d-none d-md-block">
+                        about how to fill the pages of our favorite notebook.</p>
+                    <div class="book-section-text-button-div">
+                        <button class="book-section-text-button">VIEW PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+                <div id="leftslide" class="round-book">
+                    <img src="https://thumbs.dreamstime.com/b/work-smart-not-hard-quote-notebook-51750613.jpg"
+                        alt="Notebook" class="img-fluid h-100 w-100 object-fit-cover">
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
-            <div id="leftslide" class="round-book">
-                <img src="https://thumbs.dreamstime.com/b/work-smart-not-hard-quote-notebook-51750613.jpg" 
-                     alt="Notebook" 
-                     class="img-fluid h-100 w-100 object-fit-cover">
-            </div>
-        </div>
-    </div>
 
-    <!-- Second Row -->
-    <div class="row mt-5 d-flex justify-content-evenly overflow-hidden gsap-row-2">
-        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
-            <div id="rightslide2" class="round-book_2">
-                <img src="https://professionallearninghub.ca/wp-content/uploads/2022/06/bigstock-Chalks-In-Rainbow-Colors-Chal-425340725-1200x800.jpg"
-                     alt="Chalks" 
-                     class="img-fluid h-100 w-100 object-fit-cover">
+        <!-- Second Row -->
+        <div class="row mt-5 d-flex justify-content-evenly overflow-hidden gsap-row-2">
+            <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+                <div id="rightslide2" class="round-book_2">
+                    <img src="https://professionallearninghub.ca/wp-content/uploads/2022/06/bigstock-Chalks-In-Rainbow-Colors-Chal-425340725-1200x800.jpg"
+                        alt="Chalks" class="img-fluid h-100 w-100 object-fit-cover">
+                </div>
             </div>
-        </div>
-        <div id="leftslide2" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
-            <div class="book-section-text">
-                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
-                <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
-                    of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
-                    about how to fill the pages of our favorite notebook.</p>
-                <div class="book-section-text-button-div"> 
-                    <button class="book-section-text-button">VIEW PRODUCTS</button>
+            <div id="leftslide2" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+                <div class="book-section-text">
+                    <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                    <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
+                        of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to
+                        be more imaginative<br class="d-none d-md-block">
+                        about how to fill the pages of our favorite notebook.</p>
+                    <div class="book-section-text-button-div">
+                        <button class="book-section-text-button">VIEW PRODUCTS</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Third Row -->
-    <div class="row d-flex justify-content-evenly mt-5 flex-column-reverse flex-md-row overflow-hidden gsap-row-3">
-        <div id="rightslide3" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
-            <div class="book-section-text">
-                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
-                <p class="book-section-text-p text-center text-md-start">Smart Notebooks joins the exclusive club of
-                    things that never go out of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
-                    about how to fill the pages of our favorite notebook.</p>
-                <div class="book-section-text-button-div"> 
-                    <button class="book-section-text-button">VIEW PRODUCTS</button>
+        <!-- Third Row -->
+        <div class="row d-flex justify-content-evenly mt-5 flex-column-reverse flex-md-row overflow-hidden gsap-row-3">
+            <div id="rightslide3" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+                <div class="book-section-text">
+                    <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                    <p class="book-section-text-p text-center text-md-start">Smart Notebooks joins the exclusive club of
+                        things that never go out of style.<br class="d-none d-md-block"> New colors, textures, layouts
+                        and sizes inspires us to be more imaginative<br class="d-none d-md-block">
+                        about how to fill the pages of our favorite notebook.</p>
+                    <div class="book-section-text-button-div">
+                        <button class="book-section-text-button">VIEW PRODUCTS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+                <div id="leftslide3" class="round-book">
+                    <img src="https://m.media-amazon.com/images/I/81vUuFGL4dL.jpg" alt="Stationery"
+                        class="img-fluid h-100 w-100 object-fit-cover">
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
-            <div id="leftslide3" class="round-book">
-                <img src="https://m.media-amazon.com/images/I/81vUuFGL4dL.jpg" 
-                     alt="Stationery" 
-                     class="img-fluid h-100 w-100 object-fit-cover">
-            </div>
-        </div>
     </div>
-</div>
 
 
     <!-- Quality section -->

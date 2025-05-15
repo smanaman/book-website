@@ -1,43 +1,46 @@
-let leftbutton=document.getElementById('left-btn')
-let rightbutton=document.getElementById('right-btn')
-let allslide=document.querySelectorAll('.slider-img')
-let count=0;
+let leftButton = document.getElementById('left-btn');
+let rightButton = document.getElementById('right-btn');
+let slider = document.querySelector('.slider');
+let slides = document.querySelectorAll('.slider-img');
+let currentSlide = 0;
+const totalSlides = slides.length;
 
-let updatevalue=()=>{
-  allslide.forEach((val)=>{
-  val.style.transform = `translateX(${count}%)`
+// Hide left button initially since we start at slide 0
+leftButton.style.display = 'none';
 
-  })
-}
-rightbutton.addEventListener('click',()=>{
- count-=100
-console.log(count);
+const updateSlider = () => {
+    // Hide/show buttons based on current slide
+    leftButton.style.display = currentSlide === 0 ? 'none' : 'block';
+    rightButton.style.display = currentSlide === totalSlides - 1 ? 'none' : 'block';
+    
+    // Move the slider
+    slider.scrollTo({
+        left: currentSlide * slider.offsetWidth,
+        behavior: 'smooth'
+    });
+};
 
- if(count <=-300){
-  count=0
-  updatevalue()
- }
-else{
-  updatevalue()
-}
- 
-})
+rightButton.addEventListener('click', () => {
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlider();
+    }
+});
 
-leftbutton.addEventListener('click',()=>{
+leftButton.addEventListener('click', () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+        updateSlider();
+    }
+});
 
-  count +=100
-  console.log(count);
-
-  if(count>=0){
-count=0
-updatevalue()
-  }
-  else{
-    updatevalue()
-  }
-  
-})
-
+// Make responsive on window resize
+window.addEventListener('resize', () => {
+    slider.scrollTo({
+        left: currentSlide * slider.offsetWidth,
+        behavior: 'auto'
+    });
+});
 
 
 
