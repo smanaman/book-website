@@ -16,43 +16,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body style="height: 5000px;">
     <div class="container-fluid firstborder   m-0 p-0">
-        <div class="container  nav d-flex justify-content-between ">
-            <div class="col-3 navborder d-flex align-items-center">
-                <div class="logo d-flex justify-content-center ">
-                    <!-- <img src="./assert/img/Untitled-2.png" alt="" width="60%" height="100%"> -->
-                    <h1>smart write</h1>
-                </div>
+        <!-- Navbar -->
+
+       <div class="container nav d-flex justify-content-between align-items-center">
+    <!-- Logo Section -->
+    <div class="col-3 navborder d-flex align-items-center">
+        <div class="logo d-flex justify-content-center">
+            <h1>smart write</h1>
+        </div>
+    </div>
+    
+    <!-- Desktop Navigation -->
+    <div class="col-9 navborder d-none d-lg-block">
+        <div class="row navborder m-0 p-0">
+            <div class="col-2 navborder-text">
+                <p id="navtext">about</p>
             </div>
-            <div class="col-9 navborder">
-                <div class="row navborder m-0 p-0">
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">about</p>
-                    </div>
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">our products</p>
-                    </div>
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">media</p>
-                    </div>
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">gallery</p>
-                    </div>
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">contact</p>
-                    </div>
-                    <div class="col-2 navborder-text">
-                        <p id="navtext">buy now</p>
-                    </div>
-                </div>
+            <div class="col-2 navborder-text">
+                <p id="navtext">our products</p>
+            </div>
+            <div class="col-2 navborder-text">
+                <p id="navtext">media</p>
+            </div>
+            <div class="col-2 navborder-text">
+                <p id="navtext">gallery</p>
+            </div>
+            <div class="col-2 navborder-text">
+                <p id="navtext">contact</p>
+            </div>
+            <div class="col-2 navborder-text">
+                <p id="navtext">buy now</p>
             </div>
         </div>
+    </div>
+    
+    <!-- Mobile Hamburger -->
+    <div class="d-lg-none">
+        <button class="hamburger-btn" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu d-lg-none" id="mobileMenu">
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">about</p>
+        </div>
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">our products</p>
+        </div>
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">media</p>
+        </div>
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">gallery</p>
+        </div>
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">contact</p>
+        </div>
+        <div class="mobile-nav-item">
+            <p class="navtext-mobile">buy now</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- slider div -->
+
+
         <div class=" mt-2 row  m-0 t-0">
             <div class="col-12 slider m-0 p-0">
                 <div class="slider-img"><img src="./assert/img/poster-book.jpg" alt="" width="100%" height="100%"></div>
@@ -65,7 +105,7 @@
     </div>
     <div class="container mt-5">
 
-        <div class="row border">
+        <div class="row border ">
             <div class="col-12 mt-5  border  about">
                 <h2 id="StudentBasic" class="AboutText text-center">A little<br>
                     something about us</h2>
@@ -88,73 +128,78 @@
     </div>
     <!-- row one book -->
 
-    <div class="container mt-5 ">
-        <div class="row d-flex justify-content-evenly  flex-column-reverse flex-sm-row overflow-hidden">
-            <div id="rightslide"
-                class="overflow-hidden col-12 col-md-7  book-section d-flex justify-content-center align-items-center ">
-                <div class="book-section-text ">
-                    <h2 class="book-section-text-heading">STUDENT BASICS</h2>
-                    <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
-                        of style.<br> New colors, textures, layouts and sizes inspires us to be more imaginative<br>
-                        about how to fill the pages of our favorite notebook.</p>
-                        <div class="book-section-text-button-div"> <button class="book-section-text-button">VIEW PRODUCTS</button></div>     
-                    </div>
-            </div>
-            <div
-                class="col-12 justify-content-center col-md-4  book-section d-flex justify-content-sm-start align-items-center">
-                <div id="leftslide" class="round-book">
-                    <img src="https://thumbs.dreamstime.com/b/work-smart-not-hard-quote-notebook-51750613.jpg" alt="" width="100%" height="100%">
+ <div class="container mt-5">
+    <!-- First Row -->
+    <div class="row d-flex justify-content-evenly flex-column-reverse flex-md-row overflow-hidden gsap-row-1">
+        <div id="rightslide" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+            <div class="book-section-text">
+                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
+                    of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
+                    about how to fill the pages of our favorite notebook.</p>
+                <div class="book-section-text-button-div"> 
+                    <button class="book-section-text-button">VIEW PRODUCTS</button>
                 </div>
             </div>
         </div>
-
-        <!-- row two book -->
-
-        <div class="row mt-5 d-flex justify-content-evenly overflow-hidden">
-            <div
-                class="col-12 justify-content-center  col-md-4 mt-5  book-section d-flex justify-content-sm-end align-items-center">
-                <div id="rightslide2" class="round-book_2">
-                    <img src="https://professionallearninghub.ca/wp-content/uploads/2022/06/bigstock-Chalks-In-Rainbow-Colors-Chal-425340725-1200x800.jpg" alt="" width="100%" height="100%">
-                </div>
-            </div>
-            <div
-                class="col-12 col-md-7 mt-5  book-section d-flex justify-content-center align-items-center">
-                <div id="leftslide2" class="book-section-text">
-                    <h2 class="book-section-text-heading">STUDENT BASICS</h2>
-                    <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
-                        of style.<br> New colors, textures, layouts and sizes inspires us to be more imaginative<br>
-                        about how to fill the pages of our favorite notebook.</p>
-                        <div class="book-section-text-button-div"> <button class="book-section-text-button">VIEW PRODUCTS</button></div>     
-                    </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- row two book -->
-
-        <div class="row d-flex justify-content-evenly mt-5  flex-column-reverse flex-sm-row overflow-hidden ">
-            <div
-                class="col-12 col-md-7  book-section d-flex justify-content-center align-items-center">
-                <div id="rightslide3" class="book-section-text">
-                    <h2 class="book-section-text-heading ">STUDENT BASICS</h2>
-                    <p class="book-section-text-p text-center text-sm-start">Smart Notebooks joins the exclusive club of
-                        things that never go out
-                        of style.<br> New colors, textures, layouts and sizes inspires us to be more imaginative<br>
-                        about how to fill the pages of our favorite notebook.</p>
-              <div class="book-section-text-button-div"> <button class="book-section-text-button">VIEW PRODUCTS</button></div>     
-                </div>
-            </div>
-            <div
-                class="col-12 justify-content-center col-md-4  book-section d-flex justify-content-sm-start align-items-center">
-                <div id="leftslide3" class="round-book">
-                    <img src="https://m.media-amazon.com/images/I/81vUuFGL4dL.jpg" alt="" width="100%" height="100%">
-                </div>
+        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+            <div id="leftslide" class="round-book">
+                <img src="https://thumbs.dreamstime.com/b/work-smart-not-hard-quote-notebook-51750613.jpg" 
+                     alt="Notebook" 
+                     class="img-fluid h-100 w-100 object-fit-cover">
             </div>
         </div>
-
     </div>
+
+    <!-- Second Row -->
+    <div class="row mt-5 d-flex justify-content-evenly overflow-hidden gsap-row-2">
+        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+            <div id="rightslide2" class="round-book_2">
+                <img src="https://professionallearninghub.ca/wp-content/uploads/2022/06/bigstock-Chalks-In-Rainbow-Colors-Chal-425340725-1200x800.jpg"
+                     alt="Chalks" 
+                     class="img-fluid h-100 w-100 object-fit-cover">
+            </div>
+        </div>
+        <div id="leftslide2" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+            <div class="book-section-text">
+                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                <p class="book-section-text-p">Smart Notebooks joins the exclusive club of things that never go out
+                    of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
+                    about how to fill the pages of our favorite notebook.</p>
+                <div class="book-section-text-button-div"> 
+                    <button class="book-section-text-button">VIEW PRODUCTS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row d-flex justify-content-evenly mt-5 flex-column-reverse flex-md-row overflow-hidden gsap-row-3">
+        <div id="rightslide3" class="col-12 col-md-7 book-section d-flex justify-content-center align-items-center">
+            <div class="book-section-text">
+                <h2 class="book-section-text-heading">STUDENT BASICS</h2>
+                <p class="book-section-text-p text-center text-md-start">Smart Notebooks joins the exclusive club of
+                    things that never go out of style.<br class="d-none d-md-block"> New colors, textures, layouts and sizes inspires us to be more imaginative<br class="d-none d-md-block">
+                    about how to fill the pages of our favorite notebook.</p>
+                <div class="book-section-text-button-div"> 
+                    <button class="book-section-text-button">VIEW PRODUCTS</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 book-section d-flex justify-content-center align-items-center">
+            <div id="leftslide3" class="round-book">
+                <img src="https://m.media-amazon.com/images/I/81vUuFGL4dL.jpg" 
+                     alt="Stationery" 
+                     class="img-fluid h-100 w-100 object-fit-cover">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Quality section -->
+
+
     <div class="container-fluid ">
         <div class="row mt-5">
             <div class="col-12 col-sm-6 col-md-3 border  proudect-details p-0 ">
@@ -171,7 +216,8 @@
                     <i class="fa-solid fa-book"></i>
                 </div>
                 <h3> Best Quality Products</h3>
-                <p  style="margin-top: 18px;">All our products are manufactured using latest hi-tech machines and under strict quality control measures.</p>
+                <p style="margin-top: 18px;">All our products are manufactured using latest hi-tech machines and under
+                    strict quality control measures.</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 border bor proudect-details-two p-4">
                 <div class="proudect-details-icon">
@@ -180,42 +226,339 @@
                 <h3>
                     Best Quality Paper
                 </h3>
-                <p  style="margin-top: 18px;">We use the finest paper in the industry which does not only stop the ink from spreading, but is also bright and white.</p>
+                <p style="margin-top: 18px;">We use the finest paper in the industry which does not only stop the ink
+                    from spreading, but is also bright and white.</p>
             </div>
             <div class="col-12 col-sm-6 col-md-3 border bor proudect-details-two p-4">
                 <div class="proudect-details-icon">
-                    <i class="fa-solid fa-rocket"></i>                </div>
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
                 <h3>Innovative Products</h3>
-                <p  style="margin-top: 18px;">We have introduced various innovative covers and apps to make normal books more engaging and exciting. </p>
+                <p style="margin-top: 18px;">We have introduced various innovative covers and apps to make normal books
+                    more engaging and exciting. </p>
             </div>
         </div>
     </div>
-   <!-- // prodeuct range // -->
+    <!-- // prodeuct range // -->
     <div class="container-main mt-5">
         <p class="">Our Product Range</p>
-    <div class="container-pro mt-5">
-        <div class="product"><i class="fa-solid fa-book"></i><h3>Hardcover Books</h3></div>
-        <div class="product"><i class="fa-solid fa-book-open"></i><h3>Paperback Books</h3></div>
-        <div class="product"><i class="fa-solid fa-book-journal-whills"></i><h3>Notebooks</h3></div>
-        <div class="product"><i class="fa-solid fa-book-skull"></i><h3>Journals</h3></div>
-        <div class="product"><i class="fa-solid fa-pen"></i><h3>Custom Stationery</h3></div>
-        <div class="product"><i class="fa-solid fa-folder"></i><h3>File Folders</h3></div>
-        <div class="product"><i class="fa-solid fa-file-lines"></i><h3>Reports & Manuals</h3></div>
-        <div class="product"><i class="fa-solid fa-newspaper"></i><h3>Magazines</h3></div>
-        <div class="product"><i class="fa-solid fa-bullhorn"></i><h3>Brochures</h3></div>
-        <div class="product"><i class="fa-solid fa-image"></i><h3>Posters</h3></div>
-        <div class="product"><i class="fa-solid fa-calendar-alt"></i><h3>Calendars</h3></div>
-        <div class="product"><i class="fa-solid fa-address-card"></i><h3>Business Cards</h3></div>
-        <div class="product"><i class="fa-solid fa-award"></i><h3>Certificates</h3></div>
-        <div class="product"><i class="fa-solid fa-envelope"></i><h3>Envelopes</h3></div>
-        <div class="product"><i class="fa-solid fa-folder-open"></i><h3>Presentation Folders</h3></div>
-        <div class="product"><i class="fa-solid fa-newspaper"></i><h3>Newsletters</h3></div>
-        <div class="product"><i class="fa-solid fa-file-alt"></i><h3>Flyers</h3></div>
+        <div class="container-pro mt-5">
+            <div class="product"><i class="fa-solid fa-book"></i>
+                <h3>Hardcover Books</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-book-open"></i>
+                <h3>Paperback Books</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-book-journal-whills"></i>
+                <h3>Notebooks</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-book-skull"></i>
+                <h3>Journals</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-pen"></i>
+                <h3>Custom Stationery</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-folder"></i>
+                <h3>File Folders</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-file-lines"></i>
+                <h3>Reports & Manuals</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-newspaper"></i>
+                <h3>Magazines</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-bullhorn"></i>
+                <h3>Brochures</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-image"></i>
+                <h3>Posters</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-calendar-alt"></i>
+                <h3>Calendars</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-address-card"></i>
+                <h3>Business Cards</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-award"></i>
+                <h3>Certificates</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-envelope"></i>
+                <h3>Envelopes</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-folder-open"></i>
+                <h3>Presentation Folders</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-newspaper"></i>
+                <h3>Newsletters</h3>
+            </div>
+            <div class="product"><i class="fa-solid fa-file-alt"></i>
+                <h3>Flyers</h3>
+            </div>
+        </div>
     </div>
-</div>
 
 
-<!-- // smart write text -->
+    <!-- // smart write text -->
+    <div class="creative-bg-elements">
+        <div class="ink-splatter ink-1"><img
+                src="https://www.transparentpng.com/thumb/splash/splash-ink-png-clipart-1.png" alt="ink splatter"></div>
+        <div class="ink-splatter ink-2"><img
+                src="https://www.transparentpng.com/thumb/splash/blue-ink-splash-png-clipart-6.png" alt="ink splatter">
+        </div>
+        <div class="ink-splatter ink-3"><img
+                src="https://www.transparentpng.com/thumb/splash/red-ink-splash-png-clipart-11.png" alt="ink splatter">
+        </div>
+    </div>
+
+    <!-- Your Original Header Content (Unchanged) -->
+    <div class="container-fluid firstborder m-0 p-0">
+        <!-- ... Your existing header and slider code ... -->
+    </div>
+
+    <!-- NEW: Interactive Notebook Builder -->
+    <section class="notebook-builder">
+        <div class="builder-container">
+            <div class="builder-header">
+                <h2>Create Your Perfect Notebook</h2>
+                <p>Customize every detail to match your creative style. Our notebooks are made to order with premium
+                    materials.</p>
+            </div>
+            <div class="builder-content">
+                <div class="notebook-display">
+                    <div class="notebook-3d">
+                        <div class="notebook-cover" id="notebook-cover">
+                            <div class="cover-design">My Notebook</div>
+                        </div>
+                        <div class="notebook-pages" id="notebook-pages"></div>
+                    </div>
+                </div>
+                <div class="builder-options">
+                    <form id="notebook-request-form">
+                        <input type="hidden" id="selected-size" name="size" value="A5 (6×8 in)">
+                        <input type="hidden" id="selected-paper" name="paper" value="Lined">
+                        <input type="hidden" id="selected-color" name="color" value="black">
+
+                        <div class="option-group">
+                            <h4>Notebook Size</h4>
+                            <div class="size-options">
+                                <button type="button" class="size-btn active" data-size="a5">A5 (6×8 in)</button>
+                                <button type="button" class="size-btn" data-size="a4">A4 (8×11 in)</button>
+                                <button type="button" class="size-btn" data-size="b6">B6 (5×7 in)</button>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <h4>Paper Style</h4>
+                            <div class="paper-options">
+                                <button type="button" class="paper-btn active" data-paper="lined">Lined</button>
+                                <button type="button" class="paper-btn" data-paper="grid">Grid</button>
+                                <button type="button" class="paper-btn" data-paper="blank">Blank</button>
+                                <button type="button" class="paper-btn" data-paper="dot">Dot Grid</button>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <h4>Cover Color</h4>
+                            <div class="color-options">
+                                <div class="color-option active" style="background-color: #1a1a1a;" data-color="black"
+                                    title="Black"></div>
+                                <div class="color-option" style="background-color: #d4c200;" data-color="gold"
+                                    title="Gold"></div>
+                                <div class="color-option" style="background-color: #c1272d;" data-color="red"
+                                    title="Red"></div>
+                                <div class="color-option" style="background-color: #5a287d;" data-color="purple"
+                                    title="Purple"></div>
+                                <div class="color-option" style="background-color: #005f87;" data-color="blue"
+                                    title="Blue"></div>
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <h4>Your Email</h4>
+                            <input type="email" name="email" class="form-control" placeholder="your@email.com" required>
+                        </div>
+                        <div class="option-group">
+                            <h4>Additional Notes</h4>
+                            <textarea name="notes" class="form-control"
+                                placeholder="Any special requests..."></textarea>
+                        </div>
+                        <div class="builder-actions">
+                            <div id="form-message" class="mb-2"></div>
+                            <button type="submit" class="btn-add-to-cart">
+                                <i class="fas fa-envelope"></i> Request This Notebook
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Your Original Content Sections (Unchanged) -->
+    <!-- ... Your existing about, products, etc. sections ... -->
+
+    <!-- NEW: Creative Process Section -->
+    <!-- <section class="creative-process">
+        <div class="process-container">
+            <div class="process-header">
+                <h2>Our Craftsmanship</h2>
+                <p>Every Smart Write notebook is carefully crafted through a meticulous process that ensures quality and durability.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Sustainable Materials</h3>
+                    <p>We source paper from responsibly managed forests and use eco-friendly inks</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fas fa-cut"></i></div>
+                    <h3>Precision Cutting</h3>
+                    <p>Each sheet is laser-cut for perfect edges and consistent sizing</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fas fa-book"></i></div>
+                    <h3>Hand Binding</h3>
+                    <p>Artisans stitch and glue each notebook for durability that lasts</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Quality Control</h3>
+                    <p>Every notebook undergoes rigorous inspection before shipping</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- NEW: Instagram Gallery -->
+    <section class="instagram-gallery">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2>#SmartWriteCreates</h2>
+                <p>See how artists, writers, and thinkers use our notebooks</p>
+            </div>
+            <div class="gallery-posts">
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Notebook sketch">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Writing in notebook">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Notebook and coffee">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Open notebook">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Notebook and pen">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+                <div class="gallery-post">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Notebook in nature">
+                    <div class="post-overlay">
+                        <i class="fab fa-instagram"></i>
+                        <span>View on Instagram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Floating CTA -->
+    <div class="floating-cta">
+        <div class="cta-bubble">Need help choosing the right notebook?</div>
+        <button class="cta-button">
+            <i class="fas fa-comment-alt"></i>
+        </button>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="/bestsellers">Bestsellers</a></li>
+                    <li><a href="/new-releases">New Releases</a></li>
+                    <li><a href="/genres">Browse by Genre</a></li>
+                    <li><a href="/authors">Browse by Author</a></li>
+                    <li><a href="/deals">Deals & Discounts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/shipping">Shipping Information</a></li>
+                    <li><a href="/returns">Returns Policy</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="/about">Our Story</a></li>
+                    <li><a href="/blog">Book Blog</a></li>
+                    <li><a href="/events">Author Events</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/locations">Store Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Connected</h3>
+                <p>Subscribe to our newsletter for book recommendations and exclusive offers!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-goodreads"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+            <p>&copy; 2023 BookNook. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Your Original Scripts -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -227,6 +570,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 
 
