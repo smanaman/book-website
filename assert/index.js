@@ -155,30 +155,30 @@ gsap.from(".product",{
   duration:2,
   scrollTrigger:{
     trigger:".product",
-    // markers:true,
-    start:"top 40%",
-    end: "top 40%",
+    markers:true,
+    start:"top 80%",
+    end: "top 60%",
     scrub:3,
     
   }
 })
 
 
-gsap.to(".SmartWriteText p",{
-  transform: "translateX(-83%)",
+// gsap.to(".SmartWriteText p",{
+//   transform: "translateX(-83%)",
 
-  scrollTrigger:{
-    trigger:".SmartWriteText",
-    scroll:'body',
-    // markers:true,
-  start:"top 0%",
-  end:"30%",
-  scrub: 3,
-  pin: true,
+//   scrollTrigger:{
+//     trigger:".SmartWriteText",
+//     scroll:'body',
+//     markers:true,
+//   start:"top 0%",
+//   end:"30%",
+//   scrub: 3,
+//   pin: true,
 
-  }
+//   }
 
-})
+// })
 document.addEventListener('DOMContentLoaded', function() {
     // Notebook Customizer Functionality
     // Size Options
